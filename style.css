@@ -1,0 +1,912 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width:100%;
+    background-color: #FFFFFF;
+    display:flex; 
+    flex-direction:column; 
+    overflow-x: none;
+}
+
+/*THIS IS THE STYLING FOR THE NAVIGATION*/
+
+header{
+    background-color: #FFFFFF;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #636363;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.border{
+    border: 2px solid #eee2e2;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0 auto;
+}
+
+.navbar{
+   min-height: 80px; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 24px;
+}
+
+.nav-menu{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.border:hover{
+   border-color: black;
+    transition: 0.7s ease;  
+}
+
+
+.nav-link:hover{
+    color: black;
+    transition: 0.7s ease;
+}
+
+.hamburger{
+display: none;
+cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #9DA0A1;
+
+} 
+
+
+@media(max-width:768px){
+
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        width: 100%;
+        height: 785px;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 2;
+        background-color: #FFFFFF;
+        justify-content:center;
+
+    }
+
+
+    .border{
+        border-color: #FFFFFF; 
+    }
+
+    .nav-item{
+        margin: 50px;
+        margin-bottom: 50px;
+     
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .artsizing{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.logonav {
+  height: 40px;
+  margin-right: 20px;
+}
+.titlelogo{
+    display: flex;
+}
+
+.companyname{
+    color: #636363;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 7px;
+    text-align: center;
+}
+/*THIS IS THE MAIN CSS*/
+
+main{
+    max-width: 100%;
+    background-color: #FFFFFF;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*THIS IS THE FOOTER CSS*/
+
+footer{
+    width: 100%;
+    min-height:100px; 
+    flex: 0 1 180px;
+    background-color:#9DA0A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#FFFFFF;
+}
+
+footer > div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+footer > p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.socials >img{
+    margin:2%;
+}
+
+/*THIS IS THE SLIDER STYLING*/
+
+.slider {
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .slick-slide {
+    margin:5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .slick-list {
+    margin: 0px -5px 0px -5px;
+  }
+  button.slick-next, button.slick-next:hover {
+    position: absolute;
+    top: 41%;
+    right: 54px;
+    width: 47px;
+    height: 75px;
+    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+    background-size: 95px;
+  }
+  button.slick-prev, button.slick-prev:hover {
+    position: absolute;
+    top: 41%;
+    left: 15px;
+    z-index: 1;
+    width: 47px;
+    height: 75px;
+    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+    background-size: 95px;
+        background-position-x: right;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 70px;
+    color: #EA8496;
+    line-height: inherit;
+    font-weight: bold;
+  }
+  .slider img {
+    height: 324px;
+    width: 100%;
+  }
+
+
+
+  .text > .title {
+      font-size: 3rem;
+      width: 100%;
+      margin: 20px;
+      text-align: center;
+      margin-top: 100px;
+  }
+
+  .text > .artist {
+    font-size: 2rem;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    color: #636363;
+}
+
+@media (max-width: 780px) {
+    .text > .artist {
+   display: none;
+    }
+    .text > .title {
+display: none;
+ }
+ .companyname{
+ display: none;
+}
+.slider img {
+    width: 380px;
+  }
+}
+  
+  /* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
+  /* Slider */
+  .slick-slider
+  {
+      position: relative;
+  
+      display: flex;
+  
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+  
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+  
+      display: block;
+      overflow: hidden;
+  
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+  
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+  
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+  
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: flex;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+  
+      height: auto;
+  
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }
+  /* Slider */
+  .slick-loading .slick-list
+  {
+      background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat;
+  }
+  
+  /* Icons */
+  @font-face
+  {
+      font-family: 'slick';
+      font-weight: normal;
+      font-style: normal;
+  
+      src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot');
+      src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.woff') format('woff'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.ttf') format('truetype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.svg#slick') format('svg');
+  }
+  /* Arrows */
+  .slick-prev,
+  .slick-next
+  {
+      font-size: 0;
+      line-height: 0;
+  
+      position: absolute;
+      top: 50%;
+  
+      display: block;
+  
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      padding: 0;
+  
+      cursor: pointer;
+  
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+  }
+  .slick-prev:hover,
+  .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus
+  {
+      color: transparent;
+      outline: none;
+      background: transparent;
+  }
+  .slick-prev:hover:before,
+  .slick-prev:focus:before,
+  .slick-next:hover:before,
+  .slick-next:focus:before
+  {
+      opacity: 1;
+  }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before
+  {
+      opacity: .25;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-family: 'slick';
+      font-size: 20px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: white;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .slick-prev
+  {
+      left: -25px;
+  }
+  [dir='rtl'] .slick-prev
+  {
+      right: -25px;
+      left: auto;
+  }
+  .slick-prev:before
+  {
+      content: '';
+  }
+  [dir='rtl'] .slick-prev:before
+  {
+      content: '';
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  .slick-next
+  {
+      right: -25px;
+  }
+  [dir='rtl'] .slick-next
+  {
+      right: auto;
+      left: -25px;
+  }
+  .slick-next:before
+  {
+      content: '';
+  }
+  [dir='rtl'] .slick-next:before
+  {
+      content: '';
+  }
+  
+  /* Dots */
+  .slick-slider
+  {
+      margin-bottom: 30px;
+  }
+  
+  .slick-dots
+  {
+      position: absolute;
+      bottom: -45px;
+  
+      display: block;
+  
+      width: 100%;
+      padding: 0;
+  
+      list-style: none;
+  
+      text-align: center;
+  }
+  .slick-dots li
+  {
+      position: relative;
+  
+      display: inline-block;
+  
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+  
+      cursor: pointer;
+  }
+  .slick-dots li button
+  {
+      font-size: 0;
+      line-height: 0;
+  
+      display: block;
+  
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+  
+      cursor: pointer;
+  
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus
+  {
+      outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before
+  {
+      opacity: 1;
+  }
+  .slick-dots li button:before
+  {
+      font-family: 'slick';
+      font-size: 6px;
+      line-height: 20px;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      width: 20px;
+      height: 20px;
+  
+      content: '•';
+      text-align: center;
+  
+      opacity: .25;
+      color: black;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before
+  {
+      opacity: .75;
+      color: black;
+  }
+  
+
+  .o-divider {
+    border: 0;
+    margin: 20px;
+    height: 1px;
+    background: #9DA0A1;
+  }
+
+  .article{
+      max-width:100%;
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      word-wrap: break-word;
+      padding: 5px;
+      font-size: 1.5rem;
+  }
+
+  .goals > li{
+      font-size: 22px;
+  }
+
+
+
+  .article > h3{
+   margin: auto;
+   font-family: inherit;
+  }
+
+  .article > p{
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    color: #636363;
+  }
+
+  .qoute{
+    max-width:100%;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    word-wrap: break-word;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .qoute > p {
+    font-size: 2rem;
+    color: #636363;
+  }
+
+
+  .mainpics{
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+
+  }
+
+  ul >li{
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    color: #636363;
+  }
+
+
+
+.teamcontainer{
+    max-width: 100%;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamcontainer > .teamcard{
+    max-width: 100%;
+    min-width: 250px;
+    width:400px;
+    margin: 10px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6),
+    -10px -15px 20px rgba(182, 182, 182, 0.5);
+    transition: .5s ease;
+}
+
+@media (max-width: 780px) {
+    .teamcontainer {
+        flex-direction: column;
+    }
+}
+
+.teamcard  > img{
+    width: 100%;
+    height: 280px;
+    border: 5px #636363;
+    border-style:  none none solid none;
+    object-fit: cover;
+}
+
+.teamcard > p{
+    color: #636363;
+}
+
+.teamcard > h4{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.artsizing{
+    max-width: 100%;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .artcontainer{
+    max-width: 100%;
+    min-width: 250px;
+    width:400px;
+    margin: 10px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6),
+    -10px -15px 20px rgba(182, 182, 182, 0.5);
+    transition: .5s ease;
+    position: relative;
+}
+
+.artcontainer  > img{
+    width: 100%;
+    height: 350px;
+    border: 5px #636363;
+    border-style:  none none solid none;
+    object-fit: cover;
+}
+
+.artcontainer > h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.artcontainer > p{
+    color: #636363;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+   .artbutton{
+    position: absolute;
+    margin: 20px;
+    bottom:   0;
+    background-color:#636363;
+    color: #FFFFFF;
+    padding: 5px;
+    font-style: inherit;
+    border: none;
+    font-size: 15px;
+}
+
+.artlink{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+/*THIS IS THE STYLING FOR CONTACT FORM */
+
+.row {
+    margin: -20px 0;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+  }
+  .row .col.x-50 {
+    width: 50%;
+  }
+  .row .col.x-100 {
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .get-in-touch .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 48px;
+  }
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: Lusitana, serif;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .note .link {
+    color: #888;
+    text-decoration: none;
+  }
+  .note .link:hover {
+    text-decoration: underline;
+  }
+  .align-center {
+    text-align: center;
+  }
+
+  .contactimage{
+      width: 80%;
+      margin: auto;
+  }
+
+  /* THIS IS THE CSS FOR THE FADING IN  ELEMENTS */
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
