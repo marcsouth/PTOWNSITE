@@ -1,6 +1,13 @@
 * { 
     margin: 0;
     padding: 0;
+    border-radius: 0;
+    outline: 0;
+    vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
     box-sizing: border-box;
 }
 
@@ -268,7 +275,9 @@ display: none;
  display: none;
 }
 .slider img {
-    width: 380px;
+    width: 350px;
+    margin-left: 15px;
+    
   }
 }
   
