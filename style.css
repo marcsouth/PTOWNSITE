@@ -923,3 +923,7 @@ flex-direction: column;
     transform: translateY(0);
     opacity: 1;
   }
+
+  .goals > li{
+      font-size: 18px;
+  }
