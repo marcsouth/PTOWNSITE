@@ -4,11 +4,13 @@
     border-radius: 0;
     outline: 0;
     vertical-align: baseline;
+    font-weight: inherit;
 	font-family: inherit;
 	font-style: inherit;
 	font-size: 100%;
     box-sizing: border-box;
 }
+
 
 html{
     font-size: 16px;
@@ -36,15 +38,19 @@ li{
 }
 
 a{
-    color: #636363;
+    color: #787878;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
+    font-family: "LetteraTextLLSub-Medium";
+    font-style: inherit;
+    font-weight: bold;
 }
 
 .border{
     border: 2px solid #eee2e2;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 2px;
     margin:0 auto;
 }
 
@@ -53,7 +59,7 @@ a{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 24px;
+   padding:  24px;
 }
 
 .nav-menu{
@@ -61,7 +67,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
 }
 
 .border:hover{
@@ -119,7 +125,6 @@ cursor: pointer;
         z-index: 2;
         background-color: #FFFFFF;
         justify-content:center;
-
     }
 
 
@@ -147,13 +152,14 @@ cursor: pointer;
 }
 .titlelogo{
     display: flex;
+    font-weight: 0;
 }
 
 .companyname{
-    color: #636363;
+    color: #888;
     text-decoration: none;
-    font-size: 20px;
-    margin-top: 7px;
+    font-size: 17px;
+    margin-top: 10px;
     text-align: center;
 }
 /*THIS IS THE MAIN CSS*/
@@ -215,23 +221,21 @@ footer > p{
   }
   button.slick-next, button.slick-next:hover {
     position: absolute;
-    top: 41%;
-    right: 54px;
-    width: 47px;
-    height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
-    background-size: 95px;
+    width: 100px;
+    height: 30px;
+    background-size: contain;
+    background-image: url("arrow/arrow-right-3098\ \(1\).png");
+    background-repeat: no-repeat;
   }
   button.slick-prev, button.slick-prev:hover {
     position: absolute;
-    top: 41%;
-    left: 15px;
-    z-index: 1;
-    width: 47px;
-    height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
-    background-size: 95px;
+    width: 100px;
+    height: 30px;
+    background-size: contain;
+    background-image: url("arrow/arrow-left-3099\ \(2\).png");
+    background-repeat: no-repeat;
         background-position-x: right;
+
   }
   .slick-prev:before, .slick-next:before {
     font-size: 70px;
@@ -242,12 +246,13 @@ footer > p{
   .slider img {
     height: 324px;
     width: 100%;
+    object-fit: contain;
   }
 
 
 
   .text > .title {
-      font-size: 3rem;
+    font-size: 20px;
       width: 100%;
       margin: 20px;
       text-align: center;
@@ -255,7 +260,7 @@ footer > p{
   }
 
   .text > .artist {
-    font-size: 2rem;
+    font-size: 20px;
     width: 100%;
     margin: 20px;
     text-align: center;
@@ -263,12 +268,16 @@ footer > p{
 }
 
 @media (max-width: 780px) {
-    .text > .artist {
-   display: none;
-    }
-    .text > .title {
-display: none;
+.carouselcontainer{
+flex-direction: column;
+}
+ .text > .title{
+     margin: auto;
+     margin-top: 20px;
  }
+.text > .artist{
+    margin: auto;
+}
  .companyname{
  display: none;
 }
@@ -620,9 +629,7 @@ display: none;
       font-size: 1.5rem;
   }
 
-  .goals > li{
-      font-size: 22px;
-  }
+
 
 
 
@@ -636,6 +643,7 @@ display: none;
     text-align: center;
     width: 100%;
     color: #636363;
+    font-size: 20px;
   }
 
   .qoute{
@@ -646,12 +654,11 @@ display: none;
     margin:auto;
     word-wrap: break-word;
     padding: 5px;
-    font-size: 1.5rem;
     text-align: center;
   }
 
   .qoute > p {
-    font-size: 2rem;
+    font-size: 25px;
     color: #636363;
   }
 
