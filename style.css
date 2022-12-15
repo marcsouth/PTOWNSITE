@@ -41,9 +41,7 @@ a{
     color: #787878;
     text-decoration: none;
     font-size: 17px;
-    font-family: "LetteraTextLLSub-Medium";
     font-style: inherit;
-    font-weight: bold;
 }
 
 .border{
@@ -67,7 +65,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .border:hover{
@@ -147,7 +145,8 @@ cursor: pointer;
 }
 
 .logonav {
-  height: 40px;
+  height: 50px;
+
   margin-right: 20px;
 }
 .titlelogo{
@@ -159,7 +158,7 @@ cursor: pointer;
     color: #888;
     text-decoration: none;
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 17px;
     text-align: center;
 }
 /*THIS IS THE MAIN CSS*/
@@ -224,7 +223,6 @@ footer > p{
     width: 100px;
     height: 30px;
     background-size: contain;
-    background-image: url("arrow/arrow-right-3098\ \(1\).png");
     background-repeat: no-repeat;
   }
   button.slick-prev, button.slick-prev:hover {
@@ -232,7 +230,6 @@ footer > p{
     width: 100px;
     height: 30px;
     background-size: contain;
-    background-image: url("arrow/arrow-left-3099\ \(2\).png");
     background-repeat: no-repeat;
         background-position-x: right;
 
@@ -244,19 +241,27 @@ footer > p{
     font-weight: bold;
   }
   .slider img {
-    height: 324px;
-    width: 100%;
+    height: 100%;
+    width: 700px;
     object-fit: contain;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+
+  .text{
+      display:flex;
+      flex-direction: column;
+      margin: auto;
   }
 
 
 
   .text > .title {
-    font-size: 20px;
+    font-size: 24px;
       width: 100%;
       margin: 20px;
+      margin-bottom: 0px;
       text-align: center;
-      margin-top: 100px;
   }
 
   .text > .artist {
@@ -267,14 +272,17 @@ footer > p{
     color: #636363;
 }
 
+
+
 @media (max-width: 780px) {
-.carouselcontainer{
-flex-direction: column;
-}
+
  .text > .title{
      margin: auto;
      margin-top: 20px;
  }
+ .carouselcontainer{
+    flex-direction: column;
+    }
 .text > .artist{
     margin: auto;
 }
@@ -696,8 +704,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6),
-    -10px -15px 20px rgba(182, 182, 182, 0.5);
+    border: #9DA0A1 solid .5px;
     transition: .5s ease;
 }
 
@@ -710,7 +717,7 @@ flex-direction: column;
 .teamcard  > img{
     width: 100%;
     height: 280px;
-    border: 5px #636363;
+    border: 3px #9DA0A1;
     border-style:  none none solid none;
     object-fit: cover;
 }
@@ -740,8 +747,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6),
-    -10px -15px 20px rgba(182, 182, 182, 0.5);
+    border: #9DA0A1 solid .5px;
     transition: .5s ease;
     position: relative;
 }
@@ -749,7 +755,7 @@ flex-direction: column;
 .artcontainer  > img{
     width: 100%;
     height: 350px;
-    border: 5px #636363;
+    border: 3px #9DA0A1;
     border-style:  none none solid none;
     object-fit: cover;
 }
@@ -778,9 +784,14 @@ flex-direction: column;
     background-color:#636363;
     color: #FFFFFF;
     padding: 5px;
-    font-style: inherit;
+    font-style:inherit;
     border: none;
     font-size: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .artlink{
@@ -927,3 +938,20 @@ flex-direction: column;
   .goals > li{
       font-size: 18px;
   }
+
+.bigtitle{
+    margin: auto;
+    font-size: 60px;
+    word-break: contain;
+    text-align: center;
+}
+
+.undertitle{
+    margin-top: 10px;
+
+    font-size: 15px;
+    word-break: contain;
+    text-align: center;
+    color: #636363;
+    letter-spacing: 2px;
+}
