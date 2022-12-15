@@ -58,6 +58,10 @@ a{
    justify-content: space-between;
    align-items: center;
    padding:  24px;
+   background-color: #fff;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
 }
 
 .nav-menu{
@@ -940,10 +944,10 @@ footer > p{
   }
 
 .bigtitle{
-    margin: auto;
     font-size: 60px;
     word-break: contain;
     text-align: center;
+    margin-top: 100px;
 }
 
 .undertitle{
@@ -954,4 +958,8 @@ footer > p{
     text-align: center;
     color: #636363;
     letter-spacing: 2px;
+}
+
+.opacitytry{
+opacity: .5;
 }
