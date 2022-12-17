@@ -118,7 +118,7 @@ cursor: pointer;
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 60px;
+        top: 80px;
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -152,6 +152,7 @@ cursor: pointer;
   height: 50px;
 
   margin-right: 20px;
+  align-self: center;
 }
 .titlelogo{
     display: flex;
@@ -162,8 +163,11 @@ cursor: pointer;
     color: #888;
     text-decoration: none;
     font-size: 17px;
-    margin-top: 17px;
     text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-weight: 400;
+    margin: auto;
 }
 /*THIS IS THE MAIN CSS*/
 
@@ -291,7 +295,8 @@ footer > p{
     margin: auto;
 }
  .companyname{
- display: none;
+margin-right: 20px;
+margin-bottom: 20px;
 }
 .slider img {
     width: 100%;
@@ -701,10 +706,10 @@ footer > p{
 
 .teamcontainer > .teamcard{
     max-width: 100%;
-    min-width: 250px;
-    width:400px;
-    margin: 10px;
-    min-height: 400px;
+    min-width: 50px;
+    width: 200px;
+    margin: 2px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -712,27 +717,25 @@ footer > p{
     transition: .5s ease;
 }
 
-@media (max-width: 780px) {
-    .teamcontainer {
-        flex-direction: column;
-    }
-}
+
 
 .teamcard  > img{
     width: 100%;
-    height: 280px;
-    border: 3px #9DA0A1;
+    height: 150px;
+    border: 2px #9DA0A1;
     border-style:  none none solid none;
     object-fit: cover;
 }
 
 .teamcard > p{
     color: #636363;
+    font-size: 12px;
 }
 
 .teamcard > h4{
-    margin-top: 25px;
+    margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .artsizing{
