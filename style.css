@@ -9,6 +9,7 @@
 	font-style: inherit;
 	font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -46,10 +47,11 @@ a{
 
 .border{
     border: 2px solid #eee2e2;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 2px;
-    margin:0 auto;
+    width: max-content;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 8px;
+
 }
 
 .navbar{
@@ -73,13 +75,13 @@ a{
 }
 
 .border:hover{
-   border-color: black;
+   border-color: darkred;
     transition: 0.7s ease;  
 }
 
 
 .nav-link:hover{
-    color: black;
+    color: darkred;
     transition: 0.7s ease;
 }
 
@@ -214,11 +216,9 @@ footer > p{
 
 .slider {
     max-width: 100%;
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
   }
   .slick-slide {
-    margin:5px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -249,12 +249,18 @@ footer > p{
     font-weight: bold;
   }
   .slider img {
-    height: 100%;
-    width: 700px;
+    width: 100%;
+    position: relative;
     object-fit: contain;
-    margin: auto;
     margin-bottom: 0px;
   }
+
+  @media(min-width:1000px){
+    .slider img{
+        height: 650px;
+    }
+}
+
 
   .text{
       display:flex;
@@ -279,7 +285,9 @@ footer > p{
     text-align: center;
     color: #636363;
 }
-
+.carouselcontainer{
+    flex-direction: column;
+    }
 
 
 @media (max-width: 780px) {
@@ -288,9 +296,7 @@ footer > p{
      margin: auto;
      margin-top: 20px;
  }
- .carouselcontainer{
-    flex-direction: column;
-    }
+
 .text > .artist{
     margin: auto;
 }
@@ -636,12 +642,10 @@ margin-right: 20px;
 
   .article{
       max-width:100%;
-      width: 1000px;
       display: flex;
       flex-direction: column;
       margin:auto;
       word-wrap: break-word;
-      padding: 5px;
       font-size: 1.5rem;
   }
 
@@ -651,15 +655,18 @@ margin-right: 20px;
 
   .article > h3{
    margin: auto;
+   font-size: 40px;
    font-family: inherit;
   }
 
   .article > p{
     word-wrap: break-word;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+    width: 1160px;
     color: #636363;
     font-size: 20px;
+    align-self: center;
   }
 
   .qoute{
@@ -675,18 +682,39 @@ margin-right: 20px;
 
   .qoute > p {
     font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+
+  .qoute > .qoutep {
+    font-size: 25px;
     color: #636363;
+    align-self: center;
+  }
+
+  .qoute > .author{
+      margin-top: 10px;
+      font-size: 20px;
   }
 
 
   .mainpics{
     max-width: 100%;
-    width: 1000px;
+    width: 1160px;
     margin: 0 auto;
 
   }
 
   ul >li{
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    width: 100px;
+    color: #636363;
+  }
+
+  .goals >li{
     word-wrap: break-word;
     text-align: center;
     width: 100%;
@@ -701,6 +729,7 @@ margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 
 .teamcontainer > .teamcard{
@@ -785,10 +814,11 @@ margin-right: 20px;
 
 .artsizing{
     max-width: 100%;
-    width: 1000px;
+    width: 1160px;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
  .artcontainer{
     max-width: 100%;
@@ -832,12 +862,12 @@ margin-right: 20px;
    .artbutton{
     position: absolute;
     margin: 20px;
-    bottom:   0;
-    background-color:#636363;
-    color: #FFFFFF;
+    bottom:   20px;
+    background-color:#fff;
+    border: 2px solid #eee2e2;
+    color: #636363;
     padding: 5px;
     font-style:inherit;
-    border: none;
     font-size: 15px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
     Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -845,6 +875,13 @@ margin-right: 20px;
     padding-left: 7px;
     padding-right: 7px;
 }
+
+.artbutton:hover{
+    border-color: black;
+    color: #000;
+    transition: 0.7s ease; 
+}
+
 
 .artlink{
     width: 100%;
@@ -988,7 +1025,7 @@ margin-right: 20px;
   }
 
   .goals > li{
-      font-size: 18px;
+      font-size: 20px;
   }
 
 .bigtitle{
@@ -1015,21 +1052,52 @@ opacity: .5;
 .philocontainer > p {
     word-wrap: break-word;
     text-align: center;
-    width: 100%;
     color: #FFFFFF;
     font-size: 20px;
+
 }
+.philocontainer > h3 {
+    word-wrap: break-word;
+    text-align:center;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
 
 .philocontainer{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/pictures/artpic.JPG");
-    background-size: cover;
+    text-align: center;
     height: 100%;
-    width: 100%;
-    height: 100%;
-    height: 500px;
+    max-width: 100%;
+    width: 1160px;
+    height:700px;
+    margin: 0 auto;
+    object-fit: cover;
     background-repeat: no-repeat;
     align-items: center;
+    justify-content: center;
     display: flex;
-    align-items: center;
     padding: 40px;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.qoutepic{
+    background-image: url("/pictures/QOUTEPICYES.JPG");
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    width: 1160px;
+    height:700px;
+    margin: 0 auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-self: center;
 }
