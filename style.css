@@ -21,6 +21,7 @@ html{
 
 body{
     min-height: 100vh;
+    overflow: hidden;
     width:100%;
     background-color: #FFFFFF;
     display:flex; 
@@ -265,41 +266,55 @@ footer > p{
   .text{
       display:flex;
       flex-direction: column;
+      position: absolute;
+      bottom: 20px;
+      padding: 10px;
+      right: 20px;
+      background: rgb(214 16 72 / 85%);
+      color: white;
+      align-items: center;
       margin: auto;
+      width: 175px;
+      line-height:30px;
+      font-weight: 300;
+      font-size: 15px;
+  }
+
+ .carouselbutton{
+    background-color:#fff;
+    border: 2px solid #eee2e2;
+    color: #636363;
+    padding: 5px;
+    margin: 5px;
+    font-style:inherit;
+    font-size: 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 
 
 
   .text > .title {
-    font-size: 24px;
       width: 100%;
-      margin: 20px;
-      margin-bottom: 0px;
       text-align: center;
   }
 
   .text > .artist {
-    font-size: 20px;
     width: 100%;
-    margin: 20px;
     text-align: center;
-    color: #636363;
 }
 .carouselcontainer{
     flex-direction: column;
+    position:relative;
     }
 
 
 @media (max-width: 780px) {
 
- .text > .title{
-     margin: auto;
-     margin-top: 20px;
- }
 
-.text > .artist{
-    margin: auto;
-}
  .companyname{
 margin-right: 20px;
 }
@@ -647,6 +662,7 @@ margin-right: 20px;
       margin:auto;
       word-wrap: break-word;
       font-size: 1.5rem;
+      overflow: hidden;
   }
 
 
@@ -829,7 +845,7 @@ margin-right: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: #9DA0A1 solid .5px;
+
     transition: .5s ease;
     position: relative;
 }
@@ -837,13 +853,10 @@ margin-right: 20px;
 .artcontainer  > img{
     width: 100%;
     height: 350px;
-    border: 3px #9DA0A1;
-    border-style:  none none solid none;
     object-fit: cover;
 }
 
 .artcontainer > h4{
-    text-align: center;
     margin-top: 10px;
     font-size: 20px;
 }
@@ -1015,7 +1028,7 @@ margin-right: 20px;
 
   .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s all ease;
   }
@@ -1068,14 +1081,12 @@ opacity: .5;
 
 .philocontainer{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/pictures/artpic.JPG");
-    text-align: center;
+    object-fit: contain;
     height: 100%;
     max-width: 100%;
     width: 1160px;
     height:700px;
     margin: 0 auto;
-    object-fit: cover;
-    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -1087,6 +1098,10 @@ opacity: .5;
 
 .qoutepic{
     background-image: url("/pictures/QOUTEPICYES.JPG");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     text-align: center;
     height: 100%;
     max-width: 100%;
