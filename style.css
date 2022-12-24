@@ -48,7 +48,6 @@ a{
 
 .border{
     border: 2px solid #eee2e2;
-    width: max-content;
     padding: 5px;
     padding-left: 7px;
     padding-right: 8px;
@@ -209,8 +208,15 @@ footer > p{
     text-align: center;
 }
 
+.maillogo{
+    height: 40px !important;
+    padding-top: 5px !important;
+    margin-right: 4px !important;
+}
+
 .socials >img{
     margin:2%;
+    height: 40px;
 }
 
 /*THIS IS THE SLIDER STYLING*/
@@ -251,16 +257,11 @@ footer > p{
   }
   .slider img {
     width: 100%;
-    position: relative;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 0px;
   }
 
-  @media(min-width:1000px){
-    .slider img{
-        height: 650px;
-    }
-}
+
 
 
   .text{
@@ -270,12 +271,11 @@ footer > p{
       bottom: 20px;
       padding: 10px;
       right: 20px;
-      background: rgb(214 16 72 / 85%);
+      background: rgb(126 118 121 / 85%);
       color: white;
       align-items: center;
       margin: auto;
       width: 175px;
-      line-height:30px;
       font-weight: 300;
       font-size: 15px;
   }
@@ -309,6 +309,8 @@ footer > p{
 .carouselcontainer{
     flex-direction: column;
     position:relative;
+    height: 100%;
+    width: 100%;
     }
 
 
@@ -328,7 +330,6 @@ margin-right: 20px;
   /* Slider */
   .slick-slider
   {
-      position: relative;
   
       display: flex;
   
@@ -349,7 +350,6 @@ margin-right: 20px;
   
   .slick-list
   {
-      position: relative;
   
       display: block;
       overflow: hidden;
@@ -379,7 +379,6 @@ margin-right: 20px;
   
   .slick-track
   {
-      position: relative;
       top: 0;
       left: 0;
   
@@ -698,7 +697,9 @@ margin-right: 20px;
 
   .qoute > p {
     font-size: 25px;
-    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    color: black;
     text-align: center;
   }
 
@@ -706,6 +707,7 @@ margin-right: 20px;
   .qoute > .qoutep {
     font-size: 25px;
     color: #636363;
+    font-weight: 100 !important;
     align-self: center;
   }
 
@@ -717,7 +719,6 @@ margin-right: 20px;
 
   .mainpics{
     max-width: 100%;
-    width: 1160px;
     margin: 0 auto;
 
   }
@@ -961,7 +962,7 @@ margin-right: 20px;
     width: 100%;
     height: 36px;
     border-width: 0 0 2px 0;
-    border-color: #000;
+    border-color: #636363;
     line-height: 26px;
     font-weight: 400;
   }
@@ -985,15 +986,15 @@ margin-right: 20px;
   }
   .contact-form .submit-btn {
     display: inline-block;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #636363;
+    border: 2px solid #eee2e2;
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
     line-height: 24px;
     padding: 8px 16px;
-    border: none;
     cursor: pointer;
   }
   
@@ -1020,7 +1021,6 @@ margin-right: 20px;
 
   .contactimage{
       width: 80%;
-      width: 1160px;
       margin: auto;
   }
 
@@ -1068,11 +1068,14 @@ opacity: .5;
     text-align: center;
     color: #FFFFFF;
     font-size: 20px;
+    font-weight: 600;
+    margin: 0px 15px 0 15px;
 
 }
 .philocontainer > h3 {
     word-wrap: break-word;
     text-align:center;
+    font-weight: 600;
     width: 100%;
     color: #FFFFFF;
     font-size: 40px;
@@ -1081,39 +1084,24 @@ opacity: .5;
 
 .philocontainer{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/pictures/artpic.JPG");
-    object-fit: contain;
-    height: 100%;
-    max-width: 100%;
-    width: 1160px;
-    height:700px;
-    margin: 0 auto;
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 5px;
     align-items: center;
-    justify-content: center;
     display: flex;
-    padding: 40px;
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
 }
 
 
 .qoutepic{
     background-image: url("/pictures/QOUTEPICYES.JPG");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    height: 100%;
-    max-width: 100%;
-    width: 1160px;
-    height:700px;
-    margin: 0 auto;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 40px;
-    flex-direction: column;
-    align-self: center;
+    height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+
