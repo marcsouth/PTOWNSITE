@@ -58,6 +58,7 @@
           </nav> 
         </header>
         
+        <div class="desktopwrap">
 
         <main>
            <br>
@@ -177,10 +178,10 @@
         <br>
             <br>
 
-            <img class="mainpics reveal" src="/pictures/team pic.JPG"/>
-           <br>
+            <img class="mainpics reveal"  src="/pictures/team pic.JPG"/>
+           <br id="about">
 
-             <H3 id="about" class="reveal">About Us</H3>
+             <H3  class="reveal">About Us</H3>
              <br>
              <p class="reveal">The Provincetown Public Art Foundation was founded in January, 2020, by Romolo Del Deo, Lise King, Karen Ojala, Stan Sikorski & Samuel Tager.
                 Our mission is to enhance and enrich the visual experience of Provincetown with Public Art.
@@ -374,10 +375,6 @@
                </ul>
 
         </p>
-   
-       <br>
-
-        <br>
         <div id="contact"></div>
         <br>
         <img src="pictures/geomap.png" alt="location" class="contactimage reveal"> 
@@ -386,7 +383,8 @@
         <h3 class="reveal">Subscribe</h3>
         <br>
         <br>
-        <form class="contact-form row reveal">
+        <form class="contact-form row reveal" action="https://provincetownpublicart.us4.list-manage.com/subscribe/post?u=4f8e8377d8a7bdf1fd86706b1&amp;id=534d18ebdf&amp;f_id=003f98e9f0"
+         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="form-field col x-50">
                <input id="name" class="input-text js-input" type="text" required>
                <label class="label" for="name">First Name</label>
@@ -402,7 +400,16 @@
             <div class="form-field col x-100 align-center">
                <input class="submit-btn" type="submit" value="Submit">
             </div>
+            <div hidden="true"><input type="hidden" name="tags" value="6874744"></div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
          </form>
+
+         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>
+         (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+         fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+         fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
          <br>
         </div>
         </main>
@@ -415,8 +422,17 @@
                 <img class="logo" src="https://fawc.org/wp-content/themes/fawc/images/instagram.svg">
                 <img src="pictures/mail-64.png" class="maillogo">
             </div>
+            <br>
+            <p class="footeradress">
+                564 Commercial St.
+                Provincetown, MA 02657
+            </p>
+
+            <br>
 
             <p>© 2022 Provincetown Public Art Foundation</p>
+            <br>
+
 
             
         </footer> 
