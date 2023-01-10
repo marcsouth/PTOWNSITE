@@ -141,11 +141,6 @@ cursor: pointer;
     .nav-menu.active{
         left: 0;
     }
-
-    .artsizing{
-        flex-direction: column;
-        width: 100%;
-    }
 }
 
 .logonav {
@@ -188,7 +183,9 @@ footer{
     width: 100%;
     min-height:100px; 
     flex: 0 1 250px;
-    background-color:#9DA0A1;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("/pictures/footerbackground.JPG");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +197,7 @@ footer > div{
     width:100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     color: #FFFFFF;
 }
 footer > p{
@@ -212,7 +209,7 @@ footer > p{
     padding-top: 5px !important;
 }
 
-.socials >img{
+.a > .logo{
     margin:2%;
     height: 40px;
 }
@@ -257,6 +254,7 @@ footer > p{
     width: 100%;
     object-fit: cover;
     margin-bottom: 0px;
+    position: relative;
   }
 
 
@@ -337,6 +335,17 @@ margin-right: 20px;
 .artcontainer > img{
     margin-right: 40px;
 }
+.contactbackimage{
+    align-items: end;
+    padding: 60px;
+}
+.sponsorbackimage > p{
+    width: 70%;
+    margin: auto;
+}
+.aboutsection > p{
+    margin-right: 50px;
+}
    }
   
   /* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
@@ -389,6 +398,8 @@ margin-right: 20px;
            -o-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
   }
+
+
   
   .slick-track
   {
@@ -454,9 +465,6 @@ margin-right: 20px;
   
       border: 1px solid transparent;
   }
-  .slick-arrow.slick-hidden {
-      display: none;
-  }
   /* Slider */
   .slick-loading .slick-list
   {
@@ -483,7 +491,6 @@ margin-right: 20px;
       position: absolute;
       top: 50%;
   
-      display: block;
   
       width: 20px;
       height: 20px;
@@ -495,7 +502,7 @@ margin-right: 20px;
       color: transparent;
       border: none;
       outline: none;
-      background: transparent;
+      background:red;
   }
   .slick-prev:hover,
   .slick-prev:focus,
@@ -699,7 +706,8 @@ margin-right: 20px;
     font-family: inherit;
     color: #fff;
     background-color: red;
-    width: 51.2%;
+    width: 58.2%;
+    width: 57%;
     padding-left: 20px;
 }
   
@@ -711,6 +719,30 @@ margin-right: 20px;
     font-family: inherit;
   }
 
+  .sponsorbackimage > h3{
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0 25px 0;
+    font-family: inherit;
+    color: #fff;
+  }
+
+  .sponsorbackimage > p{
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+    padding: 20px;
+    text-align-last: center;
+  }
+
+  .sponsormaillink > p{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    text-align-last: center;
+    text-decoration: underline;
+  }
   .article > p{
     word-wrap: break-word;
     text-align: center;
@@ -821,7 +853,7 @@ margin-right: 20px;
     word-wrap: break-word;
     overflow: hidden;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
 }
 
@@ -834,6 +866,19 @@ margin-right: 20px;
     margin:auto;
     word-wrap: break-word;
     overflow: hidden;
+}
+
+.sponsorbackimage{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url("/pictures/Sponsor\ page.JPG");
+    background-size: cover;
+     width:100%;
+     background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 25px 0 25px 0;
 }
 
 
@@ -880,6 +925,9 @@ margin-right: 20px;
       }
       .aboutsection > p{
         margin: 0 0 60px 0;
+      }
+      .subscribeheading{
+        align-self: end;
       }
 }
 
@@ -1153,7 +1201,7 @@ opacity: .5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     
 }
 
@@ -1209,7 +1257,41 @@ margin-bottom: 50px;
     color: #fff !important;
 }
 
+.footerlogo{
+    height: 200px;
+    margin: 65px;
+}
+.footerhyperlink{
+font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
 
 
 
 
+.prev {
+position: absolute;
+z-index: 5;
+left: 0;
+background: rgba(255, 254, 255, 0.4);
+border: none;
+border: none;
+    font-size: 30px;
+    padding: 0 10px 5px 10px;
+    margin-bottom: 250px;
+}
+   
+
+.next{
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 10px 5px 10px;
+    margin-bottom: 250px;
+}
