@@ -334,6 +334,9 @@ margin-right: 20px;
 .philocontainer > p {
     width: 80%;
 }
+.artcontainer > img{
+    margin-right: 40px;
+}
    }
   
   /* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
@@ -437,6 +440,7 @@ margin-right: 20px;
   .slick-initialized .slick-slide
   {
       display: flex;
+      align-items: center;
   }
   .slick-loading .slick-slide
   {
@@ -898,7 +902,6 @@ margin-right: 20px;
     max-width: 100%;
     min-width: 250px;
     width:400px;
-    margin: 10px;
     min-height: 600px;
     display: flex;
     align-items: center;
