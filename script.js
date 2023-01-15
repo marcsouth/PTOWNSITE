@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 7000,
         arrows: true,
         prevArrow: $('.prev'),
@@ -70,6 +70,7 @@ jQuery(document).ready(function ($) {
         }]
     });
 });
+
 
 
 $( '.js-input' ).keyup(function() {
