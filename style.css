@@ -44,7 +44,6 @@ a{
     text-decoration: none;
     font-size: 17px;
     font-style: inherit;
-    margin: auto;
 }
 
 .border{
@@ -995,9 +994,11 @@ margin-right: 20px;
     color: red;
 }
 
-.missionbutton{
-
+.missionlink{
     margin: auto;
+}
+
+.missionbutton{
     background-color: #fff;
     border: 2px solid red;
     padding: 5px;
