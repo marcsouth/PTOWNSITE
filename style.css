@@ -44,6 +44,7 @@ a{
     text-decoration: none;
     font-size: 17px;
     font-style: inherit;
+    margin: auto;
 }
 
 .border{
@@ -946,7 +947,7 @@ margin-right: 20px;
     max-width: 100%;
     min-width: 250px;
     width:400px;
-    min-height: 600px;
+    min-height: 630px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -981,18 +982,33 @@ margin-right: 20px;
    .artbutton{
     position: absolute;
     margin: 20px;
-    bottom:   0px;
-    background-color:#fff;
-    border: 2px solid #eee2e2;
-    color: #636363;
+    bottom: 0px;
+    background-color: #fff;
+    border: 2px solid red;
     padding: 5px;
-    font-style:inherit;
+    font-style: inherit;
     font-size: 15px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 100;
     padding-left: 7px;
     padding-right: 7px;
+    color: red;
+}
+
+.missionbutton{
+
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid red;
+    padding: 5px;
+    font-style: inherit;
+    font-size: 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: red;
+    width: fit-content;
 }
 
 .artbutton:hover{
@@ -1284,7 +1300,7 @@ border: none;
 color: #000;
     font-size: 30px;
     padding: 0 10px 5px 10px;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 }
    
 
@@ -1298,7 +1314,7 @@ color: #000;
     border: none;
     font-size: 30px;
     padding: 0 10px 5px 10px;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 }
 
 .socials {
