@@ -998,16 +998,16 @@ margin-right: 20px;
 }
 
 .missionbutton{
-    background-color: #fff;
-    border: 2px solid red;
+    border: 2px solid #fff;
     padding: 5px;
     font-style: inherit;
+    background: none;
     font-size: 20px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 100;
     padding-left: 7px;
     padding-right: 7px;
-    color: red;
+    color: #fff;
     width: fit-content;
 }
 
@@ -1204,7 +1204,7 @@ opacity: .5;
 
 .philocontainer{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("/pictures/image\ 3.webp");
-    height: 400px; /* You must set a specified height */
+    height: auto; /* You must set a specified height */
     background-position:top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
