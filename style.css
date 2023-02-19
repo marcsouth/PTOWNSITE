@@ -465,7 +465,7 @@ margin-right: 20px;
   /* Slider */
   .slick-loading .slick-list
   {
-      background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat;
+      background: #fff  center center no-repeat;
   }
   
   /* Icons */
@@ -941,6 +941,8 @@ margin-right: 20px;
     align-items: center;
     justify-content: center;
     align-self: center;
+    position: relative;
+
 }
  .artcontainer{
     max-width: 100%;
@@ -1327,4 +1329,9 @@ color: #000;
 
 a > .logo{
     height: 40px;
+}
+
+.designerlink{
+    color: white;
+    text-decoration: underline;
 }
