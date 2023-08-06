@@ -1335,3 +1335,35 @@ a > .logo{
     color: white;
     text-decoration: underline;
 }
+
+.volounter-section{
+    display: flex;
+    background-image:url("/pictures/tempus-background.png");
+    width: 100%;
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.volounter-section > h4{
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0 25px 0;
+    font-family: inherit;
+    color: #fff;
+}
+
+.volounter-section > p {
+    width: 100%;
+    font-size: 20px;
+    text-align-last: center;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+
+}
